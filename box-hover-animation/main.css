@@ -48,6 +48,11 @@ body {
   border-radius: 1rem;
 }
 
+.box.circle {
+  background-color: #90FFB2;
+  border-radius: 50%;
+}
+
 .box:nth-of-type(2) {
   opacity: 0.5;
   z-index: 3;
@@ -80,4 +85,16 @@ body {
 
 .box-container:hover .box.rotate:nth-of-type(3) {
     transform: rotateZ(5deg);
+}
+
+.box-container:hover .box.circle:nth-of-type(1) {
+  transform: translate3d(-50px, 0px, 0);
+}
+
+.box-container:hover .box.circle:nth-of-type(2) {
+  transform: translate3d(-25px, 0, 0);
+}
+
+.box-container:hover .box.circle:nth-of-type(3) {
+  transform: translate3d(0, 0, 0);
 }
